@@ -4,7 +4,7 @@ metadata:
   name: hello-app-ui
 spec:
   replicas: 1
-  revisionHistoryLimit: 3
+  revisionHistoryLimit: 5
   selector:
     matchLabels:
       app: hello-app-ui
