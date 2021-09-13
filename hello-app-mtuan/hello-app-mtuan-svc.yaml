@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-app-ui
+  name: hello-app-mtuan
 spec:
   ports:
   - port: 8080
     targetPort: 8080
   selector:
-    app: hello-app-ui
+    app: hello-app-mtuan
