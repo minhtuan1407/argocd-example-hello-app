@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-app-ui
+  name: hello-app-mtuan
 spec:
   replicas: 1
   revisionHistoryLimit: 5
   selector:
     matchLabels:
-      app: hello-app-ui
+      app: hello-app-mtuan
   template:
     metadata:
       labels:
-        app: hello-app-ui
+        app: hello-app-mtuan
     spec:
       containers:
       - image: gcr.io/google-samples/hello-app:1.0
-        name: hello-app-ui
+        name: hello-app-mtuan
         ports:
         - containerPort: 8080
