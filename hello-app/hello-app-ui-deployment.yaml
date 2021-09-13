@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: guestbook-ui
+        app: hello-app-ui
     spec:
       containers:
       - image: gcr.io/google-samples/hello-app:1.0
